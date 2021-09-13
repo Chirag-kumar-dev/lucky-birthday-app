@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+:root{
+    --primary-color:#EF4444;
+}
+
+.pagewrap{
+    display: flex;
+
+    /*vertically stack children*/
+    flex-direction: column;
+
+    /* expand to take full height of page */
+    /* min-height overrides both height & max-height */
+    min-height: 100vh; 
+
+  } 
+  main{
+    flex-grow: 1;
+  }
+  .input-container{
+    padding: 0rem 0rem;
+    width: auto;
+    background: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 1px 18px rgba(146,161,176,.15);
+    margin: 1rem 40rem 0rem 30rem;
+    /* margin:auto; */
+    ;
+    min-height:60vh;
+}
+.input-container .center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid white;
+    padding: 10px;
+  }
+#dob{
+    border:none;
+    box-shadow: 10px 10px 25px #E5E7EB;
+    padding:1rem 2rem 1rem 2rem;
+    font-size: 1rem;
+    margin:1rem;
+    border-radius: 0.5rem;
+}
+#lucky-number{
+    border:none;
+    box-shadow: 10px 10px 25px #E5E7EB;
+    padding:1rem 2rem 1rem 2rem;
+    font-size: 1rem;
+    margin:1rem;
+    border-radius: 0.5rem;
+}
+input,label{
+    display:block;
+}
+input{
+    margin-bottom:0.5rem;
+}
+#birthday-image{
+    display: block;
+    width: 600px;
+    height: 300px;
+    object-fit:contain;
+}
+#check-btn{
+    padding: 0rem 0rem;
+    width: auto;
+    background: white;
+    border-radius: 0.5rem;
+    /* box-shadow: 0 1px 18px #991B1B; */
+    margin: auto;
+    color: white;
+    background-color: var(--primary-color);
+    min-height:4vh;
+}
+.navigation{
+
+  background-color: var(--primary-color);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    /* margin: auto; */
+    box-shadow: 0 1px 4px rgba(47, 138, 230, 0.15);
+    padding:1.5rem 2rem 1.5rem 5rem;
+    max-width: auto;
+    /* color: white; */
+}
+#message{
+    color:var(--primary-color);
+}
+.heading{
+    color: white;
+}
+.footer{
+    background-color:var(--light-gray);
+    background-color: white;
+    padding:2rem 0rem;
+    text-align: center;
+    color:black;
+    border-top-right-radius:1rem;
+    box-shadow: 0 1px 25px #E5E7EB;
+    margin-top: 3rem;
+    display:flexbox;
+    flex-direction: coloumn;
+}
+.footer .footer-header{
+    font-weight: bold;
+    font-size: large;
+    padding-inline-start:1px;
+}
+.footer .links{
+    color:black;
+}
+
+.footer ul{
+    padding-left:0px;
+}
+.list-item-inline{
+    display: inline;
+    padding: 0.25rem;
+}
+
+.footer-icon{
+    width:2rem;
+} 
