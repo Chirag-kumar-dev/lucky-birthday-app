@@ -24,9 +24,8 @@
     border-radius: 1.5rem;
     box-shadow: 0 1px 18px rgba(146,161,176,.15);
     margin: 1rem 40rem 0rem 30rem;
-    /* margin:auto; */
-    ;
-    min-height:60vh;
+    margin:auto;
+    
 }
 .input-container .center {
     margin: auto;
@@ -57,7 +56,7 @@ input{
     margin-bottom:0.5rem;
 }
 #birthday-image{
-    display: block;
+    display: flex;
     width: 600px;
     height: 300px;
     object-fit:contain;
@@ -122,3 +121,30 @@ input{
 .footer-icon{
     width:2rem;
 } 
+
+
+@media (max-width: 500px) {
+    body{
+        background-color: white;
+    }
+    
+    .container-center{
+        margin: 0;
+        border-radius: 0;
+        padding: 0;
+    }
+    #birthday-image{
+        display: flex;
+        width: auto;
+        height: 10.5em;
+        object-fit:contain;
+    }
+    .input-container{
+        margin: 0;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    
+
+}

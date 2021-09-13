@@ -30,4 +30,4 @@ function checklucky(){
     const sum=sumOfDigits(bdate);
     
 }
-checkNumberButton.addEventListener("click",checklucky)
+checkNumberButton.addEventListener("click",checklucky);
