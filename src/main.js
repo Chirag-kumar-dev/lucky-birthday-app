@@ -7,8 +7,15 @@ var message=document.querySelector("#message");
 function sumOfDigits(bdate){
     var bdate=bdate.replaceAll("-","");
     var lucky=luckyNumber.value;
+    if(bdate=="" || lucky==""){
+        message.innerHTML="Please enter date of birth and lucky number";
+        return;
+    }
+    // if(lucky==""){
+    //     message.innerHTML="Please enter lucky number";
+    // }
     if (lucky<=0){
-        message.innerHTML="Please enter positive Number";
+        message.innerHTML="Please enter positive lucky Number";
         return 
     }
     var totalSum=0;
